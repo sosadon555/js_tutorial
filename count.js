@@ -16,7 +16,7 @@ But bears it out even to the edge of doom.
 //unique words
 let uniques = {};
 //all words in text
-let words = sonnet.match(/\w+/g);
+let words = sonnet.match(/[\w']+/g);
 
 //Iterate through 'words' and build up an associative array of unique words.
 for (let i = 0; i < words.length; i++) {
