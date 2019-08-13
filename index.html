@@ -3,12 +3,13 @@
   <head>
     <title>Learn Enough JavaScript</title>
     <meta charset="utf-8">
+    <script src="scripts/day.js"></script>
     <script>
-      const daysOfTheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday",
-                            "Friday", "Saturday"];
-      var now = new Date();
-      var dayName = daysOfTheWeek[now.getDay()];
-      alert(`Hello world! Happy ${dayName}.`);
+      let now = new Date();
+      function greeting(date) {
+        return `Hello world! Happy ${dayName(now)}!`;
+      }
+      alert(greeting(now));
     </script>
   </head>
   <body>
