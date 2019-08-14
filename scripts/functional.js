@@ -74,3 +74,20 @@ function imperativeSum(elements) {
   return total;
 }
 console.log(imperativeSum(numbers));
+
+//sum: functional solution
+
+function functionalSums(elements) {
+  return elements.reduce((total, n) => { return total += n; });
+}
+console.log(functionalSums(numbers));
+
+//lengths: Imperative solution
+ function imperativeLengths(elements) {
+   let lengths = {};
+   elements.forEach(function(element) {
+     lengths[element] = element.length;
+   });
+   return lengths;
+ }
+console.log(imperativeLengths(states));
